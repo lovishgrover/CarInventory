@@ -1,0 +1,120 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CarInverntory
+</name>
+</assembly>
+<members>
+<member name="T:CarInverntory.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CarInverntory.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CarInverntory.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:CarInverntory.Car.Count">
+ <summary>
+ Returns car count
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:CarInverntory.Car.Id">
+ <summary>
+ Returns car identification Number
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:CarInverntory.Car.Make">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:CarInverntory.Car.Year">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:CarInverntory.Car.#ctor">
+ <summary>
+ Default Constructor = increments the car count
+ </summary>
+</member>
+<member name="M:CarInverntory.Car.#ctor(System.String,System.String,System.Int32,System.Decimal,System.Boolean)">
+ <summary>
+ Parameterized Constructor = it sets all the private variable according to the passed value
+ </summary>
+ <param name="makeValue">for car's manufacturer company</param>
+ <param name="modelValue">for car's model </param>
+ <param name="yearValue"> for car's year of manufacture</param>
+ <param name="priceValue">for car's price</param>
+ <param name="carNewValue"> for car's status that it is new or used</param>
+</member>
+<member name="M:CarInverntory.Car.GetCarData">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="F:CarInverntory.frmCarInfo.choosedCar">
+ <summary>
+ 'Variable Declarations
+ </summary>
+</member>
+<member name="M:CarInverntory.frmCarInfo.btnEnter_Click(System.Object,System.EventArgs)">
+ <summary>
+ To enter a car detail entered by the user and validate that the 
+ entered data is appropriate and then add it to list.
+ </summary>
+</member>
+<member name="M:CarInverntory.frmCarInfo.btnExit_Click(System.Object,System.EventArgs)">
+ <summary>
+ To close the form 
+ </summary>
+</member>
+<member name="M:CarInverntory.frmCarInfo.btnReset_Click(System.Object,System.EventArgs)">
+ <summary>
+ Call setdefault procedure 
+ To set all the input boxes to its default state
+ </summary>
+</member>
+<member name="M:CarInverntory.frmCarInfo.lvwCarList_SelectedIndexChanged(System.Object,System.EventArgs)">
+ <summary>
+ Event handler for the event that a character is selected in the ListView
+ </summary>
+</member>
+<member name="M:CarInverntory.frmCarInfo.lvwCarList_ItemCheck(System.Object,System.Windows.Forms.ItemCheckEventArgs)">
+ <summary>
+This will stop to check or uncheck the list in listview
+ </summary>
+</member>
+<member name="M:CarInverntory.frmCarInfo.SetDefaults">
+ <summary>
+ Resets the forms as well as any required class-level variables to their default state
+ </summary>
+</member>
+<member name="M:CarInverntory.frmCarInfo.IsValidInput">
+ <summary>
+ This will validates that in all the fields the data entered is in appropriate range or accuarate 
+ if not display an error message which ahve unrealtable input.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:CarInverntory.frmCarInfo.PopulateList">
+ <summary>
+ Clears and re-populates the ListView control
+ </summary>
+</member>
+</members>
+</doc>
